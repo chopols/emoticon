@@ -16,7 +16,7 @@ export default function PreviewGrid({ urls, cols, rows }: PreviewGridProps) {
           작업 결과 미리보기
         </p>
         <span className="rounded-full bg-[#EAF3E3] px-3 py-1 text-xs font-medium text-[#5F7A4E]">
-          {urls.length}개 · {cols}×{rows} · 360×360 JPG
+          {urls.length}개 · {cols}×{rows} · 360×360 PNG
         </span>
       </div>
 

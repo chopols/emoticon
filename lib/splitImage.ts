@@ -19,7 +19,6 @@ export interface SplitResult {
 }
 
 export const OUTPUT_SIZE = 360;
-export const JPG_QUALITY = 0.92;
 
 export function createImageBitmapFromFile(file: File): Promise<ImageBitmap | HTMLImageElement> {
   return new Promise((resolve, reject) => {
@@ -52,7 +51,7 @@ function resolveFromUrl(
 
 /**
  * 스프라이트 시트를 cols x rows 그리드로 15개 셀로 분할한 뒤
- * 각 셀을 360x360 JPG로 변환한다.
+ * 각 셀을 360x360 PNG로 변환한다.
  *
  * 셀 순서:
  *  - row-major: 좌->우, 위->아래
@@ -111,7 +110,7 @@ export async function splitImage(
 
     ctx.drawImage(bitmap, sx, sy, cellWidth, cellHeight, dx, dy, dw, dh);
 
-    const blob = await canvasToJpeg(canvas);
+    const blob = await canvasToPng(canvas);
     results.push({ blob, url: URL.createObjectURL(blob) });
   }
 
@@ -125,15 +124,14 @@ export async function splitImage(
   };
 }
 
-function canvasToJpeg(canvas: HTMLCanvasElement): Promise<Blob> {
+function canvasToPng(canvas: HTMLCanvasElement): Promise<Blob> {
   return new Promise((resolve, reject) => {
     canvas.toBlob(
       (blob) => {
         if (blob) resolve(blob);
-        else reject(new Error("JPG 변환에 실패했습니다."));
+        else reject(new Error("PNG 변환에 실패했습니다."));
       },
-      "image/jpeg",
-      JPG_QUALITY
+      "image/png"
     );
   });
 }
@@ -145,7 +143,7 @@ export async function downloadZip(
   const zip = new JSZip();
   blobs.forEach((blob, i) => {
     const num = String(i + 1).padStart(2, "0");
-    zip.file(`character_${num}.jpg`, blob);
+    zip.file(`character_${num}.png`, blob);
   });
   const zipBlob = await zip.generateAsync({ type: "blob" });
   saveAs(zipBlob, filename);

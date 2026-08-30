@@ -109,7 +109,7 @@ export default function ImageSplitter() {
         <p className="mx-auto mt-3 max-w-xl text-[#8A7A63]">
           15개 캐릭터가 모인 PNG / JPG 시트 하나를 업로드하면,
           자동으로 15칸 그리드로 잘라 각각{" "}
-          <span className="font-semibold text-[#7A664E]">360×360 JPG</span>로
+          <span className="font-semibold text-[#7A664E]">360×360 PNG</span>로
           변환하고 하나의 ZIP으로 다운로드합니다.
         </p>
       </div>
@@ -196,9 +196,9 @@ export default function ImageSplitter() {
                     ZIP 다운로드
                   </button>
                   <p className="mt-3 text-sm text-[#A89A85]">
-                    15개의 JPG가{" "}
+                    15개의 PNG가{" "}
                     <span className="font-medium text-[#7A664E]">
-                      character_01.jpg ~ character_15.jpg
+                      character_01.png ~ character_15.png
                     </span>{" "}
                     이름으로 압축됩니다.
                   </p>

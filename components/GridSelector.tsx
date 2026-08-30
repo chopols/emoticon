@@ -83,7 +83,7 @@ export default function GridSelector({
 
       <p className="mt-3 text-sm text-[#A89A85]">
         셀 순서: <span className="font-medium text-[#7A664E]">{order === "row-major" ? "가로줄(좌→우, 위→아래)" : "세로줄(위→아래, 좌→우)"}</span>
-        {" · "}15칸 자르기 · 각각 360×360 JPG
+        {" · "}15칸 자르기 · 각각 360×360 PNG
       </p>
     </div>
   );
