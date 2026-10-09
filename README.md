@@ -35,3 +35,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 # 이모티콘 만들기
+
+<!-- [![Architecture diagram of chopols/emoticon](https://gitdiagram.com/chopols/emoticon/diagram.png)](https://gitdiagram.com/chopols/emoticon?utm_source=readme&utm_medium=picture) -->
+
+<!-- ![alt text](<diagram.png>) -->
+
+<a href="https://gitdiagram.com/chopols/emoticon">
+  <img src="diagram.png" alt="Architecture Diagram" width="70%" />
+</a>
