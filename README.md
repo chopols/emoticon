@@ -168,7 +168,7 @@ PowerShell 스크립트를 통해 원격 리눅스 서버(`ubuntu.ibzsoft.com`)�
 ./deploy.ps1 -Server "chopols@ubuntu.ibzsoft.com" -Key "$HOME\.ssh\emoticon_server" -RemoteDir "/home/chopols/html/emoticon"
 ```
 
-배포 후 확인 주소: **[http://ubuntu.ibzsoft.com/emoticon/](http://ubuntu.ibzsoft.com/emoticon/)**
+배포 후 확인 주소: **[http://nginx.ibzsoft.com/emoticon/](http://nginx.ibzsoft.com/emoticon/)**
 
 ---
 
