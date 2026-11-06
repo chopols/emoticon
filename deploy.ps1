@@ -44,4 +44,4 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "`n배포 완료!" -ForegroundColor Green
-Write-Host "확인: http://ubuntu.ibzsoft.com/emoticon/ (캐시 방지: Ctrl+Shift+R)" -ForegroundColor Green
+Write-Host "확인: http://nginx.ibzsoft.com/emoticon/ (캐시 방지: Ctrl+Shift+R)" -ForegroundColor Green

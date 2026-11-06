@@ -126,7 +126,7 @@ export interface SplitResult {
   2. 원격 디렉터리(`/home/chopols/html/emoticon/*`) 정리
   3. `scp`로 `out/*` 업로드
 - 접속 정보: `chopols@ubuntu.ibzsoft.com`, SSH 키 `~/.ssh/emoticon_server`
-- 접속 주소: `http://ubuntu.ibzsoft.com/emoticon/`
+- 접속 주소: `http://nginx.ibzsoft.com/emoticon/`
 - 옵션: `-NoBuild`, `-Server`, `-Key`, `-RemoteDir`
 
 ## 8. 작업 이력 (git log)

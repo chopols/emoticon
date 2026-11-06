@@ -10,7 +10,7 @@
 
 **15개의 캐릭터가 포함된 스프라이트 시트를 손쉽게 15칸 그리드로 분할하고, 360×360 PNG 파일로 변환하여 ZIP으로 일괄 다운로드하는 웹 도구입니다.**
 
-[🌐 데모 사이트 바로가기](http://ubuntu.ibzsoft.com/emoticon/)
+[🌐 데모 사이트 바로가기](http://nginx.ibzsoft.com/emoticon/)
 
 </div>
 
